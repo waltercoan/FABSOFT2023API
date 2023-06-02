@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Projfabsoft2023Application",
+            "request": "launch",
+            "mainClass": "br.univille.projfabsoft2023api.Projfabsoft2023APIApplication",
+            "projectName": "projfabsoft2023api",
+            "args": "--spring.profiles.active=dev"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Projfabsoft2023APIApplication<projfabsoft2023>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.univille.projfabsoft2023api.Projfabsoft2023APIApplication",
+            "projectName": "projfabsoft2023",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
