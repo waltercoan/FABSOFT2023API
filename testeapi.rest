@@ -1,10 +1,25 @@
+# @name signin
+POST http://localhost:8080/api/v1/auth/signin
+Content-Type: application/json
+
+{
+    "usuario": "admin",
+    "senha": "admin"
+}
+
+###
+@token = {{signin.response.body.*}}
+
+
 ### Retorna todos os objetos cliente
 GET http://localhost:8080/api/v1/clientes
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 ### Inserir cliente
 POST http://localhost:8080/api/v1/clientes
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
     "id": 1,
@@ -32,3 +47,8 @@ Content-Type: application/json
 ### Delete cliente
 DELETE http://localhost:8080/api/v1/clientes/1
 Content-Type: application/json
+
+
+
+
+
